@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <title>WEB CAD - Beta</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { margin: 0; background: #1e1e1e; color: white; font-family: Arial, sans-serif;}
-    h2 { text-align:center; }
-    #canvas { border:1px solid #444; display:block; margin:20px auto; background:#fff;}
-  </style>
 </head>
 <body>
 
-<h2>🧰 WEB CAD (Beta)</h2>
+<h2 class="title">🧰 WEB CAD (Beta)</h2>
 
 <canvas id="canvas" width="1000" height="600"></canvas>
+
+<div class="toolbar">
+  <button onclick="setMode('line')">Línea</button>
+  <button onclick="setMode('circle')">Círculo</button>
+  <button onclick="setMode('rect')">Rectángulo</button>
+  <button onclick="clearCanvas()">🗑 Limpiar</button>
+</div>
 
 <script src="js/app.js"></script>
 <script src="js/ui.js"></script>
